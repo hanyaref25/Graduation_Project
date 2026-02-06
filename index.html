@@ -1,128 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .container {
-            text-align: center;
-            color: white;
-            padding: 40px;
-            max-width: 600px;
-        }
-        
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            animation: fadeInDown 1s ease-in;
-        }
-        
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            animation: fadeInUp 1s ease-in;
-            opacity: 0.95;
-        }
-        
-        .button-group {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeIn 1.5s ease-in;
-        }
-        
-        button {
-            padding: 15px 40px;
-            font-size: 1em;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-        
-        .btn-primary {
-            background-color: white;
-            color: #667eea;
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .btn-secondary {
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-        
-        .btn-secondary:hover {
-            background-color: white;
-            color: #667eea;
-            transform: translateY(-3px);
-        }
-        
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>مبادرتنا</title>
+  
+  <link rel="stylesheet" href="assets/css/home.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  
+  
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome!</h1>
-        <p>We're excited to have you here. Explore our site and discover what we have to offer.</p>
-        <div class="button-group">
-            <button class="btn-primary">Get Started</button>
-            <button class="btn-secondary">Learn More</button>
-        </div>
+<div class="section1" >
+
+  <nav>
+    
+    <div class="list1">
+      <img src="assets/img/page/Screenshot 2026-01-21 035100 1.png" class="logo" alt="logo">
     </div>
-</body>
-<!-- yy -->
- <script src="assets/bootstrap-5/js/bootstrap.min.js"></script>
-</html>
+    <ul class="list2">
+    <button class="btn">انضم للمبادرة</button>
+        <li><a href="#">تواصل معناا</a></li>
+        <li><a href="#">انضم الينا</a></li>
+        <li><a href="#">فريق العمل</a></li>
+        <li><a href="#">الانشطة</a></li>
+        <li><a href="#">عن المبارة</a></li>
+        <li><a href="#">الصفحة الرئيسية</a></li>
+    </ul>    
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>معًا نُحدث فرقًا</h1>
+      <p>نحو مجتمع طلابي أكثر تأثيرًا وإيجابية</p>
+      <button class="btn">انضم للمبادرة</button>
+    </div>
+  </section>
+
+  
+  
+
+
+
+   <section class="about-section">
+  <div class="about-text">
+    <h2>عن المبادرة</h2>
+    <p>
+      مبادرة طلابية تهدف إلى تمكين الشباب وتنمية مهاراتهم من خلال الأنشطة التطوعية داخل الجامعة.
+    </p>
+
+    <h2>أنشطتنا</h2>
+    <p>
+      لأن الرياضة أسلوب حياة، نوفر أنشطة رياضية تساعد الطلاب على الحفاظ على صحتهم وبناء روح الفريق.
+    </p>
+  </div>
+
+  <div class="about-images">
+    <img src="assets/img/page/students-stacking-hands-table 1.png" alt="">
+    <img src="assets/img/page/pexels-419907350-34255037 1.png" alt="">
+  </div>
+</section>
+
+
+
+
+<footer class="main-footer">
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <div class="footer-title">
+        <h2>تواصل معنا</h2>
+    </div>
+
+    <div class="footer-email">
+        <span>@12345.dic.edu.eg</span>
+        <i class="fas fa-envelope-open-text"></i>
+    </div>
+</footer>
