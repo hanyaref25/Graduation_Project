@@ -1043,15 +1043,6 @@ nav {
   animation: pulse 2s infinite;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
 .whycenter h2 {
   font-family: 'Cairo', sans-serif;
   font-size: 36px;
