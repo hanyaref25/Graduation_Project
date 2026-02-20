@@ -38,7 +38,7 @@ nav {
 
 .logo {
   height: 50px;
-  margin: 5px 0;
+  margin: 5px 0px;
 }
 
 .list1 {
@@ -80,7 +80,7 @@ nav {
   font-weight: bold;
   font-size: 14px;
   border-radius: 5px;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -135,7 +135,7 @@ nav {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .hero-content button:hover {
@@ -275,11 +275,8 @@ nav {
   border-radius: 50%;
   font-size: 20px;
 }
-/* ========================================
-   CONTACT MODAL - نافذة التواصل
-======================================== */
+/* contact form  nada */
 
-/* Modal Overlay */
 .modalover {
   position: fixed;
   top: 0;
@@ -298,13 +295,11 @@ nav {
   overflow-y: auto;
 }
 
-/* Active State */
 .modalover.modalactive {
   opacity: 1;
   visibility: visible;
 }
 
-/* Modal Box */
 .modalbox {
   background: #ffffff;
   border-radius: 20px;
@@ -336,7 +331,7 @@ nav {
   font-size: 20px;
   cursor: pointer;
   z-index: 10;
-  transition: background 0.3s, transform 0.3s;
+  transition: 0.3s, transform 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,16 +342,13 @@ nav {
   transform: rotate(90deg);
 }
 
-/* Modal Content */
 .modalcontent {
   display: flex;
   flex-direction: row-reverse;
   min-height: 500px;
 }
 
-/* ========================================
-   LEFT SIDE - Form Section
-======================================== */
+/* left form */
 
 .formsection {
   flex: 1;
@@ -382,14 +374,12 @@ nav {
   line-height: 1.6;
 }
 
-/* Contact Form */
 .contactform {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Form Group */
 .formgroup {
   display: flex;
   flex-direction: column;
@@ -404,7 +394,6 @@ nav {
   color: #1a2947;
 }
 
-/* Form Input */
 .forminput {
   width: 100%;
   padding: 14px 18px;
@@ -428,7 +417,6 @@ nav {
   color: #aaa;
 }
 
-/* Textarea */
 .formtext {
   width: 100%;
   padding: 14px 18px;
@@ -454,7 +442,6 @@ nav {
   color: #aaaaaa;
 }
 
-/* Submit Button */
 .formbtn {
   background: linear-gradient(135deg, #27ae60 0%, #219150 100%);
   border: none;
@@ -482,9 +469,7 @@ nav {
   font-size: 16px;
 }
 
-/* ========================================
-   RIGHT SIDE - Info Section
-======================================== */
+/* right formm */
 
 .infosection {
   flex: 1;
@@ -507,7 +492,6 @@ nav {
   text-align: center;
 }
 
-/* Underline */
 .infounderline {
   width: 220px;
   height: 2px;
@@ -520,7 +504,6 @@ nav {
   
 }
 
-/* Info Item */
 .infoitem {
   display: flex;
   align-items: flex-start;
@@ -529,7 +512,6 @@ nav {
   flex-direction: row-reverse;
 }
 
-/* Info Icon */
 .infoicon {
   width: 50px;
   height: 50px;
@@ -565,7 +547,6 @@ nav {
   color: #fbbc05;
 }
 
-/* Info Text */
 .infotext p {
   font-family: 'Cairo', sans-serif;
   font-size: 15px;
@@ -574,7 +555,6 @@ nav {
   margin: 0;
 }
 
-/* Social Media Section */
 .socialfollow {
   margin-top: 30px;
   padding-top: 30px;
@@ -635,11 +615,9 @@ nav {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
+/* responsve */
 
-/* Large Tablets (1024px) */
+/* Large (1024px) */
 @media (max-width: 1024px) {
   .modalbox {
     max-width: 900px;
@@ -1098,7 +1076,7 @@ nav {
   color: #fff;
   border-radius: 12px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
+  transition: 0.3s, transform 0.3s;
   box-shadow: 0 6px 20px rgba(39, 174, 96, 0.3);
 }
 
@@ -1647,11 +1625,9 @@ nav {
   box-shadow: 0 12px 35px rgba(16, 185, 129, 0.5);
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
+/* resbonsve*/
 
-/* Large Tablets (1024px) */
+/* Large (1024px) */
 @media (max-width: 1024px) {
   .aboutinithead h2 {
     font-size: 36px;
@@ -1748,7 +1724,6 @@ nav {
     font-size: 15px;
   }
 
-  /* Single Column for Mission & Vision */
   .missionvision {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1791,7 +1766,6 @@ nav {
     font-size: 26px;
   }
 
-  /* Single Column for Goals */
   .goalsgrid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1816,7 +1790,6 @@ nav {
     font-size: 14px;
   }
 
-  /* Values CTA */
   .valuescta {
     min-height: 300px;
     padding: 40px 15px;
@@ -2152,7 +2125,7 @@ body > .hero p {
   color: #fff;
   border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
+  transition: 0.3s, transform 0.3s;
   position: relative;
   z-index: 1;
 }
