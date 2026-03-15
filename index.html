@@ -4,428 +4,469 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مبادرتنا</title>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="مبادرة طلابية تهدف إلى تمكين الشباب وتنمية مهاراتهم">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<!--home page nermeen-->
-<div class="section1">
-
-  <nav>
-    <div class="list1">
-      <img src="assets/img/page/Screenshot 2026-01-21 035100 1.png" class="logo" alt="logo">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="container navbar-inner">
+      <div class="navbar-logo">
+        <a href="index.html" class="gradient-text logo-text">مبادرتنا</a>
+      </div>
+      <div class="navbar-links" id="navLinks">
+        <a href="#home" class="nav-link">الصفحة الرئيسية</a>
+        <a href="#about" class="nav-link">عن المبادرة</a>
+        <a href="#activities" class="nav-link">الأنشطة</a>
+        <a href="#team" class="nav-link">فريق العمل</a>
+        <a href="#join" class="nav-link">انضم الينا</a>
+        <a href="#contact" class="nav-link">تواصل معنا</a>
+        <button class="btn-primary btn-join-nav" onclick="openModal()">انضم للمبادرة</button>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+        <svg class="menu-icon" id="menuIcon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg class="close-icon hidden" id="closeIcon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
     </div>
-    <ul class="list2">
-      <button class="btn">انضم للمبادرة</button>
-      <li><a href="#contact">تواصل معنا</a></li>
-      <li><a href="#join">انضم الينا</a></li>
-      <li><a href="#team">فريق العمل</a></li>
-      <li><a href="#activities">الأنشطة</a></li>
-      <li><a href="#about">عن المبادرة</a></li>
-      <li><a href="#home">الصفحة الرئيسية</a></li>
-    </ul>    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-inner">
+        <a href="#home" class="mobile-link" onclick="closeMobileMenu()">الصفحة الرئيسية</a>
+        <a href="#about" class="mobile-link" onclick="closeMobileMenu()">عن المبادرة</a>
+        <a href="#activities" class="mobile-link" onclick="closeMobileMenu()">الأنشطة</a>
+        <a href="#team" class="mobile-link" onclick="closeMobileMenu()">فريق العمل</a>
+        <a href="#join" class="mobile-link" onclick="closeMobileMenu()">انضم الينا</a>
+        <a href="#contact" class="mobile-link" onclick="closeMobileMenu()">تواصل معنا</a>
+        <button class="btn-primary mobile-join-btn" onclick="openModal(); closeMobileMenu();">انضم للمبادرة</button>
+      </div>
+    </div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>معًا نُحدث فرقًا</h1>
-      <p>نحو مجتمع طلابي أكثر تأثيرًا وإيجابية</p>
-      <button class="btn">انضم للمبادرة</button>
-    </div>
-  </section>
-
-  <section class="about-section">
-  <div class="about-row">
-    <div class="about-text">
-      <h2>عن المبادرة</h2>
-      <p>مبادرة طلابية تهدف إلى تمكين الشباب تهدف لتمكين الشباب وتنمية مهاراتهم من خلال الانشطة التطوعية داخل الجامعة</p>
-    </div>
-    <div class="about-image">
-      <img src="assets/img/page/students-stacking-hands-table 1.png" alt="">
-    </div>
-  </div>
-
-  <div class="about-row">
-    <div class="about-text">
-      <h2>أنشطتنا</h2>
-      <p>لأن الرياضة أسلوب حياة نوفر انشطة رياضية تساعد الطلاب علي الحفاظ علي صحتهم وبناء روح الفريق</p>
-    </div>
-    <div class="about-image">
-      <img src="assets/img/page/pexels-419907350-34255037 1.png" alt="">
-    </div>
-  </div>
-</section>
-
-</div>
-
-<!--activities page sayed-->
-
-<section class="activities">
-  <div class="acthead">
-    <h2>أنشطتنا داخل الجامعة</h2>
-    <p>نعمل على تمكين الشباب من خلال أنشطة متنوعة ومؤثرة</p>
-  </div>
-
-  <!--activities-->
-  <div class="actgrid">
-    
-
-    <div class="actcard">
-      <div class="actimg">
-        
-        <img src="assets/img/page2/close-up-people-planning-trip 1.png" alt="الأنشطة التعليمية">
-      </div>
-      <h3>الأنشطة التعليمية</h3>
-      <p>ندرس نساعد الطلاب على تطوير مهاراتهم وتعرفة سوق العمل.</p>
-    </div>
-
-  
-    <div class="actcard">
-      <div class="actimg">
-        
-        <img src="assets/img/page2/pexels-spacex-586104 1.png" alt="الأنشطة الثقافية">
-      </div>
-      <h3>الأنشطة الثقافية</h3>
-      <p>أنشطة ثقافية ومهنية تتيح للطالب التعبير عن إبداعهم وتنمية مواهبهم في بيئة داعمة ومحفزة.</p>
-    </div>
-
-    
-    <div class="actcard">
-      <div class="actimg">
-
-        <img src="assets/img/page2/men-play-socer-park-tournament-mini-footbal-guy-black-sportsuits 1.png" alt="الأنشطة الرياضية">
-      </div>
-      <h3>الأنشطة الرياضية</h3>
-      <p>تنظيم بطولات وفعاليات رياضية تعزز روح الفريق وتشجع على النشاط والصحة البدنية بين الطلاب.</p>
-    </div>
-
-    <div class="actcard">
-      <div class="actimg">
-      
-        <img src="assets/img/page2/istockphoto-1427848338-612x612 1.png" alt="الأنشطة التطوعية">
-      </div>
-      <h3>الأنشطة التطوعية</h3>
-      <p>مبادرات تطوعية تهدف إلى خدمة المجتمع وتنمية روح العطاء والمسؤولية لدى الشباب.</p>
-    </div>
-
-  </div>
-  <div>
-    <img class="imgwhy66" src="assets/img/page2/istockphoto-2188214428-612x612 1.png" alt="">
-</div>
-</section>
-
-<!-- لماذا تنضم-->
-
-<section class="whyjoin">
-  
-  <div class="whycontent">
-    
-    <div class="whylist">
-      <div class="whyitem">
-        <i class="fas fa-check"></i>
-        <span>تطوير المهارات</span>
-      </div>
-      <div class="whyitem">
-        <i class="fas fa-check"></i>
-        <span>خبرة عملية حقيقية</span>
-      </div>
-      <div class="whyitem">
-        <i class="fas fa-check"></i>
-        <span>عمل جماعي وتواصل</span>
-      </div>
-      <div class="whyitem">
-        <i class="fas fa-check"></i>
-        <span>تأثير إيجابي في المجتمع</span>
-      </div>
-    </div>
-
-    <!-- ايقون -->
-    <div class="whycenter">
-      <div class="whyicon">
-        <i class="fas fa-lightbulb"></i>
-        <i class="fas fa-book-open"></i>
-      </div>
-      <h2>لماذا تنضم لمبادرتنا</h2>
-    </div>
-
-  </div>
-
-  <div class="whybtn">
-    <button class="joinbtn">انضم للمبادرة</button>
-  </div>
-</section>
-
-<!-- contact form-->
-
-<div class="modalover" id="contactModal">
-  <div class="modalbox">
-    
-    <button class="modalclose" id="closeModal">
-      <i class="fas fa-times"></i>
-    </button>
-
-    <div class="modalcontent">
-      
-      <div class="formsection">
-        <h2>تواصل معنا</h2>
-        <p>يمكنك التواصل معنا للاستفسار أو رغبتك في الانضمام للمبادرة.</p>
-
-        <form class="contactform" id="contactForm">
-          
-          <div class="formgroup">
-            <label>الاسم الكامل</label>
-            <input type="text" class="forminput" placeholder="اكتب اسمك هنا" required>
-          </div>
-
-          <div class="formgroup">
-            <label>البريد الالكتروني</label>
-            <input type="email" class="forminput" placeholder="example@email.com" required>
-          </div>
-
-          <div class="formgroup">
-            <label>الكلية/التخصص</label>
-            <input type="text" class="forminput" placeholder="كلية الحاسبات والمعلومات" required>
-          </div>
-
-          <div class="formgroup">
-            <label>رسالتك</label>
-            <textarea class="formtext" rows="5" placeholder="اكتب رسالتك اوي استفسارك هنا..." required></textarea>
-          </div>
-
-          <button type="submit" class="formbtn">
-            <i class="fas fa-paper-plane"></i>
-            إرسال
-          </button>
-
-        </form>
-      </div>
-
-      <div class="infosection">
-        <h2>معلومات المبادرة</h2>
-        <div class="infounderline"></div>
-
-        <div class="infoitem">
-          <div class="infoicon locicon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="infotext">
-            <p>داخل الحرم الجامعي</p>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <img src="./images/page/hero-banner.jpeg" alt="طلاب جامعيون" class="hero-bg-img">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-content">
+        <h1 class="hero-title"><span class="gradient-text">معًا نُحدث فرقًا</span></h1>
+        <p class="hero-subtitle">نحو مجتمع طلابي أكثر تأثيرًا وإيجابية</p>
+        <button class="btn-primary btn-hero animate-glow" onclick="openModal()">انضم للمبادرة</button>
+        <div class="scroll-indicator">
+          <div class="scroll-mouse">
+            <div class="scroll-dot"></div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="infoitem">
-          <div class="infoicon mailicon">
-            <i class="fas fa-envelope"></i>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="particles-bg"></div>
+      <div class="container about-rows">
+        <!-- Row 1 -->
+        <div class="about-row about-row-reverse">
+          <div class="about-text">
+            <h2 class="section-title gradient-text">عن المبادرة</h2>
+            <p class="section-desc">مبادرة طلابية تهدف إلى تمكين الشباب وتنمية مهاراتهم من خلال الأنشطة التطوعية داخل الجامعة</p>
           </div>
-          <div class="infotext">
-            <p>info@initiative.com</p>
+          <div class="about-img">
+            <div class="about-img-wrapper gradient-border-1">
+              <img src="images/page/students-stacking-hands-table 1.png" alt="عن المبادرة">
+            </div>
           </div>
         </div>
-
-        <div class="infoitem">
-          <div class="infoicon phoneicon">
-            <i class="fas fa-phone"></i>
+        <!-- Row 2 -->
+        <div class="about-row">
+          <div class="about-text">
+            <h2 class="section-title gradient-text">أنشطتنا</h2>
+            <p class="section-desc">لأن الرياضة أسلوب حياة نوفر أنشطة رياضية تساعد الطلاب على الحفاظ على صحتهم وبناء روح الفريق</p>
           </div>
-          <div class="infotext">
-            <p dir="ltr">01000000000</p>
-          </div>
-        </div>
-
-        <div class="infoitem">
-          <div class="infoicon timeicon">
-            <i class="fas fa-clock"></i>
-          </div>
-          <div class="infotext">
-            <p>أوقات العمل: الأحد – الخميس (10 ص – 4 م)</p>
+          <div class="about-img">
+            <div class="about-img-wrapper gradient-border-2">
+              <img src="images/page/pexels-419907350-34255037 1.png" alt="أنشطتنا">
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="socialfollow">
-          <h3>تابعنا على</h3>
-          <div class="socialunderline"></div>
-          <div class="socialicons">
-            <a href="#" class="sociallink fblink">
-              <i class="fab fa-facebook-f"></i>
+    <!-- Activities Section -->
+    <section id="activities" class="activities-section">
+      <div class="activities-bg-gradient"></div>
+      <div class="container activities-container">
+        <div class="activities-header">
+          <h2 class="section-title gradient-text">أنشطتنا داخل الجامعة</h2>
+          <p class="section-subtitle">نعمل على تمكين الشباب من خلال أنشطة متنوعة ومؤثرة</p>
+        </div>
+        <div class="activities-grid">
+          <!-- Educational -->
+          <div class="activity-card">
+            <a href="activity.html?id=educational">
+              <div class="activity-card-inner glass">
+                <div class="activity-card-image">
+                  <img src="images/page2/close-up-people-planning-trip 1.png" alt="الأنشطة التعليمية">
+                  <div class="activity-card-overlay"></div>
+                  <div class="activity-card-icon">📚</div>
+                </div>
+                <div class="activity-card-content">
+                  <h3 class="activity-card-title">الأنشطة التعليمية</h3>
+                  <p class="activity-card-desc">ندرس نساعد الطلاب على تطوير مهاراتهم وتعرفة سوق العمل.</p>
+                  <div class="activity-card-link">
+                    <span>عرض التفاصيل</span>
+                    <span>←</span>
+                  </div>
+                </div>
+              </div>
             </a>
-            <a href="#" class="sociallink twlink">
-              <i class="fab fa-twitter"></i>
+          </div>
+          <!-- Cultural -->
+          <div class="activity-card">
+            <a href="activity.html?id=cultural">
+              <div class="activity-card-inner glass">
+                <div class="activity-card-image">
+                  <img src="images/page2/pexels-spacex-586104 1.png" alt="الأنشطة الثقافية">
+                  <div class="activity-card-overlay"></div>
+                  <div class="activity-card-icon">🎨</div>
+                </div>
+                <div class="activity-card-content">
+                  <h3 class="activity-card-title">الأنشطة الثقافية</h3>
+                  <p class="activity-card-desc">أنشطة ثقافية ومهنية تتيح للطالب التعبير عن إبداعهم وتنمية مواهبهم في بيئة داعمة ومحفزة.</p>
+                  <div class="activity-card-link">
+                    <span>عرض التفاصيل</span>
+                    <span>←</span>
+                  </div>
+                </div>
+              </div>
             </a>
-            <a href="#" class="sociallink iglink">
-              <i class="fab fa-instagram"></i>
+          </div>
+          <!-- Sports -->
+          <div class="activity-card">
+            <a href="activity.html?id=sports">
+              <div class="activity-card-inner glass">
+                <div class="activity-card-image">
+                  <img src="images/page2/men-play-socer-park-tournament-mini-footbal-guy-black-sportsuits 1.png" alt="الأنشطة الرياضية">
+                  <div class="activity-card-overlay"></div>
+                  <div class="activity-card-icon">⚽</div>
+                </div>
+                <div class="activity-card-content">
+                  <h3 class="activity-card-title">الأنشطة الرياضية</h3>
+                  <p class="activity-card-desc">تنظيم بطولات وفعاليات رياضية تعزز روح الفريق وتشجع على النشاط والصحة البدنية بين الطلاب.</p>
+                  <div class="activity-card-link">
+                    <span>عرض التفاصيل</span>
+                    <span>←</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Volunteer -->
+          <div class="activity-card">
+            <a href="activity.html?id=volunteer">
+              <div class="activity-card-inner glass">
+                <div class="activity-card-image">
+                  <img src="images/page2/istockphoto-1427848338-612x612 1.png" alt="الأنشطة التطوعية">
+                  <div class="activity-card-overlay"></div>
+                  <div class="activity-card-icon">🤝</div>
+                </div>
+                <div class="activity-card-content">
+                  <h3 class="activity-card-title">الأنشطة التطوعية</h3>
+                  <p class="activity-card-desc">مبادرات تطوعية تهدف إلى خدمة المجتمع وتنمية روح العطاء والمسؤولية لدى الشباب.</p>
+                  <div class="activity-card-link">
+                    <span>عرض التفاصيل</span>
+                    <span>←</span>
+                  </div>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-
       </div>
+    </section>
 
+    <!-- Why Join Section -->
+    <section class="whyjoin-section">
+      <div class="whyjoin-bg"></div>
+      <div class="container whyjoin-container">
+        <div class="whyjoin-reasons">
+          <div class="reason-item glass">
+            <div class="reason-icon-box">🚀</div>
+            <span class="reason-text">تطوير المهارات</span>
+          </div>
+          <div class="reason-item glass">
+            <div class="reason-icon-box">💼</div>
+            <span class="reason-text">خبرة عملية حقيقية</span>
+          </div>
+          <div class="reason-item glass">
+            <div class="reason-icon-box">🤝</div>
+            <span class="reason-text">عمل جماعي وتواصل</span>
+          </div>
+          <div class="reason-item glass">
+            <div class="reason-icon-box">🌟</div>
+            <span class="reason-text">تأثير إيجابي في المجتمع</span>
+          </div>
+        </div>
+        <div class="whyjoin-center">
+          <div class="whyjoin-icon-wrap">
+            <div class="whyjoin-icon-box" id="whyjoinIcon">
+              <span>💡</span>
+            </div>
+            <div class="whyjoin-pulse-ring"></div>
+          </div>
+          <h2 class="section-title gradient-text">لماذا تنضم لمبادرتنا</h2>
+          <button class="btn-primary btn-hero animate-glow" onclick="openModal()">انضم للمبادرة</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mv-section">
+      <div class="container">
+        <div class="mv-header">
+          <h2 class="section-title gradient-text">عن المبادرة</h2>
+          <p class="section-subtitle">مبادرة طلابية تهدف إلى تنمية مهارات الشباب وتعزيز روح المشاركة داخل الجامعة.</p>
+        </div>
+        <div class="mv-cards">
+          <div class="mv-card glass">
+            <div class="mv-card-icon mv-icon-vision">🎯</div>
+            <h3 class="mv-card-title">رؤيتنا</h3>
+            <p class="mv-card-text">نسعى إلى بناء جيل واعٍ ومؤثر يشارك بفعالية في تنمية المجتمع الجامعي.</p>
+          </div>
+          <div class="mv-card glass">
+            <div class="mv-card-icon mv-icon-mission">✈️</div>
+            <h3 class="mv-card-title">رسالتنا</h3>
+            <p class="mv-card-text">نقدم أنشطة طلابية متنوعة تساعد على تطوير المهارات الشخصية والعمل الجماعي.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="goals-section">
+      <div class="goals-bg-gradient"></div>
+      <div class="container goals-container">
+        <div class="goals-header">
+          <div class="goals-header-icon">🎓</div>
+          <h2 class="section-title gradient-text">أهدافنا</h2>
+        </div>
+        <div class="goals-cards">
+          <div class="goal-card glass">
+            <div class="goal-card-icon">🤲</div>
+            <h3 class="goal-card-title">تشجيع العمل التطوعي</h3>
+            <div class="goal-points">
+              <div class="goal-point"><div class="goal-dot"></div><span>دعم الأنشطة الهادفة</span></div>
+              <div class="goal-point"><div class="goal-dot"></div><span>تعزيز روح التعاون</span></div>
+            </div>
+          </div>
+          <div class="goal-card glass">
+            <div class="goal-card-icon">💡</div>
+            <h3 class="goal-card-title">تنمية مهارات الطلاب</h3>
+            <div class="goal-points">
+              <div class="goal-point"><div class="goal-dot"></div><span>تنمية المهارات القيادية</span></div>
+              <div class="goal-point"><div class="goal-dot"></div><span>إعداد كوادر طلابية مميزة</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+      <div class="container">
+        <div class="values-header">
+          <div class="values-header-icon">👥</div>
+          <h2 class="section-title gradient-text">قيمنا</h2>
+        </div>
+        <div class="values-banner">
+          <div class="values-banner-bg" style="background-image: url('images/page_laste/business post 1.png')"></div>
+          <div class="values-banner-overlay"></div>
+          <div class="values-banner-particles particles-bg"></div>
+          <div class="values-banner-content">
+            <h2 class="values-cta-heading">كن جزءًا من التغيير الحقيقي</h2>
+            <button class="btn-primary btn-hero" onclick="openModal()">انضم إلينا الآن</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="join" class="steps-section">
+      <div class="steps-bg-gradient"></div>
+      <div class="container steps-container">
+        <div class="steps-header">
+          <h2 class="section-title gradient-text">كن جزءًا من التغيير</h2>
+          <p class="section-subtitle">انضم إلينا وشارك في أنشطة طلابية تطوعية تحدث فرقًا حقيقيًا داخل الجامعة</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-card-inner glass">
+              <div class="step-number step-color-1">1</div>
+              <h3 class="step-title">سجل بياناتك</h3>
+              <p class="step-text">املأ نموذج الانضمام ببياناتك الأساسية.</p>
+              <div class="step-image">
+                <img src="images/about_page/data.png" alt="سجل بياناتك">
+              </div>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card-inner glass">
+              <div class="step-number step-color-2">2</div>
+              <h3 class="step-title">اختر نشاطك</h3>
+              <p class="step-text">حدد المجال الذي يناسب اهتماماتك ومهاراتك.</p>
+              <div class="step-image">
+                <img src="images/about_page/selectur.png" alt="اختر نشاطك">
+              </div>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card-inner glass">
+              <div class="step-number step-color-3">3</div>
+              <h3 class="step-title">ابدأ المشاركة</h3>
+              <p class="step-text">شارك في الفعاليات وكن عنصرًا مؤثرًا.</p>
+              <div class="step-image">
+                <img src="images/about_page/beginshare.png" alt="ابدأ المشاركة">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="team" class="testimonials-section">
+      <div class="container testimonials-container">
+        <h2 class="section-title gradient-text testimonials-heading">آراء بعض المشاركين</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="images/about_page/mariam.png" alt="مريم علي">
+              </div>
+              <h4 class="testimonial-name">مريم علي</h4>
+            </div>
+            <p class="testimonial-text">&ldquo;المبادرة كانت فرصة ممتازة للتعلم والتطوع وخدمة المجتمع.&rdquo;</p>
+          </div>
+          <div class="testimonial-card glass">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="images/about_page/loreen.png" alt="لورين محمد">
+              </div>
+              <h4 class="testimonial-name">لورين محمد</h4>
+            </div>
+            <p class="testimonial-text">&ldquo;أنشطة مفيدة وتنظيم رائع وتجربة تستحق المشاركة.&rdquo;</p>
+          </div>
+          <div class="testimonial-card glass">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="images/about_page/akram.png" alt="أكرم عمر">
+              </div>
+              <h4 class="testimonial-name">أكرم عمر</h4>
+            </div>
+            <p class="testimonial-text">&ldquo;التجربة ساعدتني أطور مهاراتي وأتعرف على ناس جديدة.&rdquo;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-inner">
+      <div class="footer-social">
+        <a href="#" class="footer-social-icon glass" aria-label="Instagram">📷</a>
+        <a href="#" class="footer-social-icon glass" aria-label="WhatsApp">💬</a>
+        <a href="#" class="footer-social-icon glass" aria-label="LinkedIn">in</a>
+        <a href="#" class="footer-social-icon glass" aria-label="Facebook">f</a>
+        <a href="#" class="footer-social-icon glass" aria-label="Twitter">𝕏</a>
+        <a href="#" class="footer-social-icon glass" aria-label="Phone">📞</a>
+      </div>
+      <h2 class="footer-title">تواصل معنا</h2>
+      <div class="footer-email">
+        <span class="footer-email-text">@12345.dic.edu.eg</span>
+        <div class="footer-email-icon">✉️</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      جميع الحقوق محفوظة © <span id="currentYear"></span> مبادرتنا
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-content glass" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-body">
+        <!-- Form Side -->
+        <div class="modal-form-side">
+          <h2 class="modal-form-title">تواصل معنا</h2>
+          <p class="modal-form-subtitle">يمكنك التواصل معنا للاستفسار أو رغبتك في الانضمام للمبادرة.</p>
+          <div id="formContainer">
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label>الاسم الكامل</label>
+                <input type="text" required placeholder="اكتب اسمك هنا">
+              </div>
+              <div class="form-group">
+                <label>البريد الالكتروني</label>
+                <input type="email" required placeholder="example@email.com" dir="ltr" style="text-align:left">
+              </div>
+              <div class="form-group">
+                <label>الكلية/التخصص</label>
+                <input type="text" required placeholder="كلية الحاسبات والمعلومات">
+              </div>
+              <div class="form-group">
+                <label>رسالتك</label>
+                <textarea required rows="4" placeholder="اكتب رسالتك او استفسارك هنا..."></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                <span>✉️</span> إرسال
+              </button>
+            </form>
+          </div>
+          <div id="successMessage" class="success-message hidden">
+            <div class="success-icon">✅</div>
+            <p class="success-text">تم الإرسال بنجاح!</p>
+          </div>
+        </div>
+        <!-- Info Side -->
+        <div class="modal-info-side">
+          <h2 class="modal-info-title">معلومات المبادرة</h2>
+          <div class="modal-info-items">
+            <div class="modal-info-item">
+              <div class="modal-info-icon info-icon-location">📍</div>
+              <p>داخل الحرم الجامعي</p>
+            </div>
+            <div class="modal-info-item">
+              <div class="modal-info-icon info-icon-email">✉️</div>
+              <p>info@initiative.com</p>
+            </div>
+            <div class="modal-info-item">
+              <div class="modal-info-icon info-icon-phone">📞</div>
+              <p dir="ltr">01000000000</p>
+            </div>
+            <div class="modal-info-item">
+              <div class="modal-info-icon info-icon-time">🕐</div>
+              <p>أوقات العمل: الأحد – الخميس (10 ص – 4 م)</p>
+            </div>
+          </div>
+          <div class="modal-social">
+            <h3>تابعنا على</h3>
+            <div class="modal-social-links">
+              <a href="#" class="social-btn social-fb">f</a>
+              <a href="#" class="social-btn social-tw">𝕏</a>
+              <a href="#" class="social-btn social-ig">📷</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- our goals  -->
-
-
-<section class="aboutinit">
-  <div class="aboutinithead">
-    <h2>عن المبادرة</h2>
-    <p>مبادرة طلابية تهدف إلى تنمية مهارات الشباب وتعزيز روح المشاركة داخل الجامعة.</p>
-  </div>
-
-  <div class="missionvision">
-    
-    <div class="mvcard visioncard">
-      <div class="mvicon">
-        <i class="fas fa-bullseye"></i>
-      </div>
-      <h3>رؤيتنا</h3>
-      <p>نسعى إلى بناء جيل واعٍ ومؤثر يشارك بفعالية في تنمية المجتمع الجامعي.</p>
-    </div>
-
-    <div class="mvcard missioncard">
-      <div class="mvicon">
-        <i class="fas fa-paper-plane"></i>
-      </div>
-      <h3>رسالتنا</h3>
-      <p>نقدم أنشطة طلابية متنوعة تساعد على تطوير المهارات الشخصية والعمل الجماعي.</p>
-    </div>
-
-  </div>
-</section>
-<section class="goalssec">
-  <div class="goalshead">
-    <div class="goalicon">
-      <i class="fas fa-graduation-cap"></i>
-    </div>
-    <h2>أهدافنا</h2>
-  </div>
-
-  <div class="goalsgrid">
-    
-    <div class="goalcard">
-      <div class="goalcardicon">
-        <i class="fas fa-hands-helping"></i>
-      </div>
-      <h3>تشجيع العمل التطوعي</h3>
-      <div class="goalpoints">
-        <p>دعم الأنشطة الهادفة</p>
-        <p>تعزيز روح التعاون</p>
-      </div>
-    </div>
-
-    <div class="goalcard">
-      <div class="goalcardicon">
-        <i class="fas fa-lightbulb"></i>
-      </div>
-      <h3>تنمية مهارات الطلاب</h3>
-      <div class="goalpoints">
-        <p>تنمية المهارات القيادية</p>
-        <p>إعداد كوادر طلابية مميزة</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="valuessec">
-  <div class="valueshead">
-    <div class="valueicon">
-      <i class="fas fa-users"></i>
-    </div>
-    <h2>قيمنا</h2>
-  </div>
-
-  <div class="valuescta">
-    <h2>كن جزءًا من التغيير الحقيقي</h2>
-    <button class="valuebtn">انضم إلينا الآن</button>
-  </div>
-</section>
-
-
-<!-- about page yasmina -->
-
-<section class="hero">
-  <h1>كن جزءًا من التغيير</h1>
-  <p>
-    انضم إلينا وشارك في أنشطة طلابية تطوعية تحدث فرقًا حقيقيًا داخل الجامعة
-  </p>
-</section>
-
-<section class="steps" id="join">
-  <div class="step one">
-    <span class="number">3</span>
-    <h3>ابدأ المشاركة</h3>
-    <p>شارك في الفعاليات وكن عنصرًا مؤثرًا.</p>
-    <img src="assets/img/about_page/beginshare.png" alt="ابدأ المشاركة" />
-  </div>
-  <div class="step two">
-    <span class="number">2</span>
-    <h3>اختر نشاطك</h3>
-    <p>حدد المجال الذي يناسب اهتماماتك ومهاراتك.</p>
-    <img src="assets/img/about_page/selectur.png" alt="اختر نشاطك" />
-  </div>
-  <div class="step three">
-    <span class="number">1</span>
-    <h3>سجل بياناتك</h3>
-    <p>املأ نموذج الانضمام ببياناتك الأساسية.</p>
-    <img src="assets/img/about_page/data.png" alt="سجل بياناتك" />
-  </div>
-</section>
-
-<section class="testimonials">
-  <h2>آراء بعض المشاركين</h2>
-
-  <div class="cards">
-    <div class="card">
-      <div class="card-header">
-        <img src="assets/img/about_page/mariam.png" alt="مريم علي" />
-        <h4>مريم علي</h4>
-      </div>
-      <p>المبادرة كانت فرصة ممتازة للتعلم والتطوع وخدمة المجتمع.</p>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <img src="assets/img/about_page/loreen.png" alt="لورين محمد" />
-        <h4>لورين محمد</h4>
-      </div>
-      <p>أنشطة مفيدة وتنظيم رائع وتجربة تستحق المشاركة.</p>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <img src="assets/img/about_page/akram.png" alt="أكرم عمر" />
-        <h4>أكرم عمر</h4>
-      </div>
-      <p>التجربة ساعدتني أطور مهاراتي وأتعرف على ناس جديدة.</p>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <button>انضم للمبادرة</button>
-</section>
-
-<!-- contact us-->
-<footer class="main-footer" id="contact">
-  <div class="social-icons">
-    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-    <a href="#" aria-label="Phone"><i class="fas fa-phone"></i></a>
-  </div>
-
-  <div class="footer-title">
-    <h2>تواصل معنا</h2>
-  </div>
-
-  <div class="footer-email">
-    <span>@12345.dic.edu.eg</span>
-    <i class="fas fa-envelope-open-text"></i>
-  </div>
-</footer>
-<script src="assets/js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

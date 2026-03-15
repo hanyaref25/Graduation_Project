@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مبادرتنا - النشاط</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/activity.css">
+</head>
+<body>
+  <div id="activityPage" class="activity-page">
+    <!-- Back Navigation -->
+    <nav class="activity-nav" id="activityNav">
+      <div class="activity-nav-inner">
+        <a href="index.html" class="activity-back-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
+          <span>العودة للرئيسية</span>
+        </a>
+        <a href="index.html" class="gradient-text activity-nav-logo">مبادرتنا</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section (populated by JS) -->
+    <section class="activity-hero" id="activityHero">
+      <div class="activity-hero-bg" id="activityHeroBg">
+        <div class="activity-hero-overlay"></div>
+      </div>
+      <div class="activity-hero-content scroll-animate">
+        <div class="activity-hero-icon" id="activityIcon"></div>
+        <h1 class="activity-hero-title" id="activityTitle"></h1>
+        <p class="activity-hero-desc" id="activityDesc"></p>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="activity-content-section">
+      <div class="activity-content-container">
+        <!-- About this activity -->
+        <div class="activity-about glass scroll-animate" id="activityAbout">
+          <h2>عن هذا النشاط</h2>
+          <p id="activityFullDesc"></p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="activity-features scroll-animate">
+          <h2 class="activity-features-title">مميزات النشاط</h2>
+          <div class="activity-features-grid" id="activityFeatures"></div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="activity-cta scroll-animate">
+          <div class="activity-cta-inner glass">
+            <h2>هل أنت مستعد للانضمام؟</h2>
+            <p>انضم إلينا اليوم وكن جزءًا من هذا النشاط المميز</p>
+          </div>
+        </div>
+
+        <!-- Other Activities -->
+        <div class="activity-others scroll-animate">
+          <h2 class="activity-others-title">أنشطة أخرى</h2>
+          <div class="activity-others-grid" id="otherActivities"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="activity-footer">
+      <div class="activity-footer-inner">
+        <a href="index.html" class="gradient-text activity-footer-logo">مبادرتنا</a>
+        <p>© <span id="activityYear"></span> مبادرتنا. جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/activities-data.js"></script>
+  <script src="js/activity.js"></script>
+</body>
+</html>
