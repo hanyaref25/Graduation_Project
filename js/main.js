@@ -47,15 +47,51 @@ function closeModal() {
   successMessage.classList.add('hidden');
 }
 
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
   e.preventDefault();
+  var form = document.getElementById('contactForm');
   var formContainer = document.getElementById('formContainer');
   var successMessage = document.getElementById('successMessage');
-  formContainer.classList.add('hidden');
-  successMessage.classList.remove('hidden');
-  setTimeout(function () {
-    closeModal();
-  }, 2000);
+  var submitButton = form.querySelector('button[type="submit"]');
+  var formData = new FormData(form);
+  var selectedSlug = formData.get('activity_slug');
+
+  var payload = {
+    full_name: formData.get('full_name'),
+    email: formData.get('email'),
+    college: formData.get('college'),
+    phone: formData.get('phone'),
+    message: formData.get('message')
+  };
+
+  try {
+    submitButton.disabled = true;
+    submitButton.textContent = 'جاري الإرسال...';
+
+    if (selectedSlug) {
+      var activitiesResponse = await apiGet('/activities');
+      var activity = (activitiesResponse.data || []).find(function (item) {
+        return item.slug === selectedSlug;
+      });
+
+      if (activity) {
+        payload.activity_id = activity.id;
+      }
+    }
+
+    await apiPost('/applications', payload);
+
+    formContainer.classList.add('hidden');
+    successMessage.classList.remove('hidden');
+    setTimeout(function () {
+      closeModal();
+    }, 2000);
+  } catch (error) {
+    alert(error.message || 'تعذر إرسال الطلب حاليًا. تأكد من تشغيل الباك إند.');
+  } finally {
+    submitButton.disabled = false;
+    submitButton.innerHTML = '<span>✉️</span> إرسال';
+  }
 }
 
 // ===== Scroll Animations =====

@@ -409,19 +409,33 @@
             <form id="contactForm" onsubmit="handleFormSubmit(event)">
               <div class="form-group">
                 <label>الاسم الكامل</label>
-                <input type="text" required placeholder="اكتب اسمك هنا">
+                <input type="text" name="full_name" required placeholder="اكتب اسمك هنا">
               </div>
               <div class="form-group">
                 <label>البريد الالكتروني</label>
-                <input type="email" required placeholder="example@email.com" dir="ltr" style="text-align:left">
+                <input type="email" name="email" required placeholder="example@email.com" dir="ltr" style="text-align:left">
               </div>
               <div class="form-group">
                 <label>الكلية/التخصص</label>
-                <input type="text" required placeholder="كلية الحاسبات والمعلومات">
+                <input type="text" name="college" required placeholder="كلية الحاسبات والمعلومات">
+              </div>
+              <div class="form-group">
+                <label>رقم الهاتف</label>
+                <input type="text" name="phone" placeholder="01xxxxxxxxx" dir="ltr" style="text-align:left">
+              </div>
+              <div class="form-group">
+                <label>النشاط المهتم به</label>
+                <select name="activity_slug">
+                  <option value="">اختر النشاط المناسب</option>
+                  <option value="educational">الأنشطة التعليمية</option>
+                  <option value="cultural">الأنشطة الثقافية</option>
+                  <option value="sports">الأنشطة الرياضية</option>
+                  <option value="volunteer">الأنشطة التطوعية</option>
+                </select>
               </div>
               <div class="form-group">
                 <label>رسالتك</label>
-                <textarea required rows="4" placeholder="اكتب رسالتك او استفسارك هنا..."></textarea>
+                <textarea name="message" required rows="4" placeholder="اكتب رسالتك او استفسارك هنا..."></textarea>
               </div>
               <button type="submit" class="btn-submit">
                 <span>✉️</span> إرسال
@@ -467,6 +481,7 @@
     </div>
   </div>
 
+  <script src="js/api.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

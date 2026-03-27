@@ -1,5 +1,5 @@
 // ===== Activity Detail Page =====
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
   var params = new URLSearchParams(window.location.search);
   var id = params.get('id');
 
@@ -8,7 +8,29 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
-  var activity = activities.find(function (a) { return a.id === id; });
+  var activity = null;
+
+  try {
+    var response = await apiGet('/activities/' + encodeURIComponent(id));
+    var apiActivity = response.data;
+
+    activity = {
+      id: apiActivity.slug,
+      title: apiActivity.title,
+      description: apiActivity.description,
+      fullDescription: apiActivity.fullDescription,
+      image: apiActivity.image,
+      icon: apiActivity.icon,
+      features: apiActivity.features && apiActivity.features.length ? apiActivity.features : [
+        'متابعة أعداد المشاركين',
+        'عرض تقارير وصور النشاط',
+        'تنظيم مواعيد الفعاليات',
+        'تجربة تسجيل إلكتروني سهلة'
+      ]
+    };
+  } catch (error) {
+    activity = activities.find(function (a) { return a.id === id; });
+  }
 
   if (!activity) {
     window.location.href = 'index.html';
