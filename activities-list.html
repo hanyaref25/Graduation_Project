@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مبادرتنا - الأنشطة</title>
+  <link rel="stylesheet" href="./css/activities-list.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="activity-nav">
+    <div class="activity-nav-inner">
+      <a href="#" id="backBtn" class="activity-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6"/>
+        </svg>
+        <span>العودة</span>
+      </a>
+      <a href="index.html" class="gradient-text activity-nav-logo">مبادرتنا</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="al-hero">
+    <div class="al-hero-overlay"></div>
+    <div class="al-hero-content">
+      <div class="al-hero-icon" id="alHeroIcon"></div>
+      <h1 id="alHeroTitle"></h1>
+      <p id="alHeroDesc"></p>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="al-section">
+    <div class="al-container">
+      <div class="al-grid" id="activitiesGrid"></div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="al-modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="al-modal glass" onclick="event.stopPropagation()">
+      <button class="al-modal-close" onclick="closeModal()">✕</button>
+      <div class="al-modal-icon" id="modalIcon"></div>
+      <h2 class="al-modal-title" id="modalTitle"></h2>
+      <p class="al-modal-desc" id="modalDesc"></p>
+      <div class="al-modal-details" id="modalDetails"></div>
+      <a class="btn-subscribe al-modal-btn" id="modalLink" href="#" target="_blank">
+        اشترك الآن
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="activity-footer">
+    <div class="activity-footer-inner">
+      <a href="index.html" class="gradient-text activity-footer-logo">مبادرتنا</a>
+      <p>© 2025 مبادرتنا. جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="js/activities-list.js"></script>
+</body>
+
+</html>
