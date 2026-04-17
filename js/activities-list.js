@@ -2,6 +2,7 @@ const activitiesData = {
   volunteer: [
     {
       icon: '🌿',
+      image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=80',
       badge: 'بيئي',
       color: 'al-img-1',
       title: 'تنظيف الحرم الجامعي',
@@ -12,6 +13,7 @@ const activitiesData = {
     },
     {
       icon: '📦',
+      image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80',
       badge: 'اجتماعي',
       color: 'al-img-2',
       title: 'جمع التبرعات',
@@ -22,6 +24,7 @@ const activitiesData = {
     },
     {
       icon: '📖',
+      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80',
       badge: 'تعليمي',
       color: 'al-img-3',
       title: 'تعليم الأطفال',
@@ -32,6 +35,7 @@ const activitiesData = {
     },
     {
       icon: '🩺',
+      image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&q=80',
       badge: 'صحي',
       color: 'al-img-4',
       title: 'قوافل طبية',
@@ -45,6 +49,7 @@ const activitiesData = {
   sports: [
     {
       icon: '⚽',
+      image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&q=80',
       badge: 'كرة قدم',
       color: 'al-img-2',
       title: 'بطولة كرة القدم',
@@ -55,6 +60,7 @@ const activitiesData = {
     },
     {
       icon: '🏃',
+      image: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=400&q=80',
       badge: 'جري',
       color: 'al-img-1',
       title: 'سباقات الجري',
@@ -65,6 +71,7 @@ const activitiesData = {
     },
     {
       icon: '🎾',
+      image: 'https://images.unsplash.com/photo-1542144582-1ba00456b5e3?w=400&q=80',
       badge: 'تنس',
       color: 'al-img-3',
       title: 'دروس التنس',
@@ -75,6 +82,7 @@ const activitiesData = {
     },
     {
       icon: '🏀',
+      image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&q=80',
       badge: 'كرة سلة',
       color: 'al-img-4',
       title: 'بطولة كرة السلة',
@@ -88,6 +96,7 @@ const activitiesData = {
   cultural: [
     {
       icon: '🎨',
+      image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&q=80',
       badge: 'فنون',
       color: 'al-img-3',
       title: 'ورشة الفنون',
@@ -98,6 +107,7 @@ const activitiesData = {
     },
     {
       icon: '🎭',
+      image: 'https://images.unsplash.com/photo-1503095396549-807759245b35?w=400&q=80',
       badge: 'مسرح',
       color: 'al-img-4',
       title: 'فرقة المسرح',
@@ -108,6 +118,7 @@ const activitiesData = {
     },
     {
       icon: '📸',
+      image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&q=80',
       badge: 'تصوير',
       color: 'al-img-1',
       title: 'نادي التصوير',
@@ -118,6 +129,7 @@ const activitiesData = {
     },
     {
       icon: '✍️',
+      image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&q=80',
       badge: 'كتابة',
       color: 'al-img-2',
       title: 'نادي الكتابة الإبداعية',
@@ -131,43 +143,47 @@ const activitiesData = {
   educational: [
     {
       icon: '💼',
+      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80',
       badge: 'مهني',
       color: 'al-img-1',
       title: 'ورش سوق العمل',
       desc: 'ورش عمل لتعريف الطلاب بمتطلبات سوق العمل وبناء السيرة الذاتية.',
       date: 'شهرياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://2u.pw/KCPDpg'
     },
     {
       icon: '💻',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&q=80',
       badge: 'تقني',
       color: 'al-img-2',
       title: 'دورات البرمجة',
       desc: 'دورات تدريبية في البرمجة وتطوير التطبيقات للمبتدئين.',
       date: 'أسبوعياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://2u.pw/FNTxIf'
     },
     {
       icon: '🗣️',
+      image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=400&q=80',
       badge: 'لغات',
       color: 'al-img-3',
       title: 'تعلم اللغات',
       desc: 'حصص تعليمية لتطوير مهارات اللغة الإنجليزية والتحدث بثقة.',
       date: 'أسبوعياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://2u.pw/dNSf9D'
     },
     {
       icon: '📊',
+      image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&q=80',
       badge: 'ريادة',
       color: 'al-img-4',
       title: 'ريادة الأعمال',
       desc: 'برنامج لتطوير مهارات ريادة الأعمال وبناء المشاريع الناشئة.',
       date: 'الترم الثاني',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://2u.pw/Yp3PH5'
     }
   ]
 };
@@ -177,21 +193,27 @@ const activityId = params.get('id') || 'volunteer';
 const grants = activitiesData[activityId] || activitiesData['volunteer'];
 
 const heroTitles = {
-  volunteer: { title: 'الأنشطة التطوعية', icon: '🤝' },
-  sports:    { title: 'الأنشطة الرياضية', icon: '⚽' },
-  cultural:  { title: 'الأنشطة الثقافية', icon: '🎨' },
-  educational:{ title: 'الأنشطة التعليمية', icon: '📚' }
+  volunteer:   { title: 'الأنشطة التطوعية',  icon: '🤝' },
+  sports:      { title: 'الأنشطة الرياضية',  icon: '⚽' },
+  cultural:    { title: 'الأنشطة الثقافية',  icon: '🎨' },
+  educational: { title: 'الأنشطة التعليمية', icon: '📚' }
 };
 
 const hero = heroTitles[activityId];
-document.querySelector('.al-hero-icon').textContent = hero.icon;
-document.querySelector('.al-hero h1').textContent = hero.title + ' المتاحة';
+document.getElementById('alHeroIcon').textContent = hero.icon;
+document.getElementById('alHeroTitle').textContent = hero.title + ' المتاحة';
+
+document.getElementById('backBtn').href = `activity.html?id=${activityId}`;
 
 const grid = document.getElementById('activitiesGrid');
 grid.innerHTML = grants.map((g, i) => `
   <div class="al-card scroll-animate">
     <div class="al-card-img ${g.color}">
-      <span class="al-card-emoji">${g.icon}</span>
+      <img src="${g.image}" alt="${g.title}" 
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+           style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;">
+      <span class="al-card-emoji" style="display:none;">${g.icon}</span>
+      <div class="al-card-overlay"></div>
     </div>
     <div class="al-card-body">
       <span class="al-badge">${g.badge}</span>

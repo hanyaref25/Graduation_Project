@@ -256,3 +256,10 @@
   text-align: center;
   border-radius: 14px;
 }
+.al-card-img img {
+  transition: transform 0.5s ease;
+}
+
+.al-card:hover .al-card-img img {
+  transform: scale(1.1);
+}
