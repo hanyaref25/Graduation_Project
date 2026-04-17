@@ -56,7 +56,7 @@ const activitiesData = {
       desc: 'بطولات ومسابقات داخلية وخارجية بين فرق الكليات.',
       date: 'الترم الأول',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://n9.cl/7i4xe'
     },
     {
       icon: '🏃',
@@ -67,7 +67,7 @@ const activitiesData = {
       desc: 'تدريبات جماعية ومسابقات جري دورية داخل الحرم الجامعي.',
       date: 'أسبوعياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://n9.cl/h7vk8h'
     },
     {
       icon: '🎾',
@@ -78,7 +78,7 @@ const activitiesData = {
       desc: 'حصص تدريبية ومباريات تنس للمبتدئين والمحترفين.',
       date: 'الترم الثاني',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://etf.tournamentsoftware.com/'
     },
     {
       icon: '🏀',
@@ -89,7 +89,7 @@ const activitiesData = {
       desc: 'تدريبات وبطولات بين الكليات للطلاب المتحمسين.',
       date: 'الترم الأول',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://n9.cl/8hrsc'
     }
   ],
 
@@ -103,7 +103,7 @@ const activitiesData = {
       desc: 'ورش عمل فنية لتطوير مهارات الرسم والتصميم والإبداع.',
       date: 'أسبوعياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://n9.cl/nnu84'
     },
     {
       icon: '🎭',
@@ -114,7 +114,7 @@ const activitiesData = {
       desc: 'تدريبات مسرحية وعروض فنية دورية داخل الجامعة.',
       date: 'الترم الثاني',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://2u.pw/LqkoWE'
     },
     {
       icon: '📸',
@@ -125,7 +125,7 @@ const activitiesData = {
       desc: 'ورش تصوير فوتوغرافي ومسابقات للمواهب الجديدة.',
       date: 'شهرياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://n9.cl/5myos'
     },
     {
       icon: '✍️',
@@ -136,7 +136,7 @@ const activitiesData = {
       desc: 'جلسات كتابة إبداعية وتطوير مهارات التعبير الأدبي.',
       date: 'أسبوعياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://2u.pw/g1ATna'
     }
   ],
 
