@@ -9,29 +9,29 @@ const activitiesData = {
       desc: 'حملات دورية لتنظيف وتجميل الحرم الجامعي وزراعة الأشجار.',
       date: 'كل جمعة',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://shorturl.at/xB2NU'
     },
     {
       icon: '📦',
-      image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80',
+      image: 'https://plus.unsplash.com/premium_photo-1733306621909-1d63c088a93e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       badge: 'اجتماعي',
       color: 'al-img-2',
-      title: 'جمع التبرعات',
-      desc: 'تنظيم حملات لجمع الملابس والمستلزمات للأسر المحتاجة.',
+      title: ' مؤسسات خيرية',
+      desc: 'المساهمة في تنفيذ مبادرات المؤسسة لتوصيل الدعم للمستحقين.',
       date: 'شهرياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://shorturl.at/b1tmv'
     },
     {
       icon: '📖',
-      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80',
-      badge: 'تعليمي',
+      image: 'https://plus.unsplash.com/premium_photo-1681830431271-d740702ec63f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      badge: 'انساني',
       color: 'al-img-3',
-      title: 'تعليم الأطفال',
-      desc: 'مبادرة لتعليم أطفال المجتمع المحيط بالجامعة مجاناً.',
+      title: 'المبادرات الإنسانية المستدامة',
+      desc: 'دورة أونلاين مجانية تتناول التنمية المستدامة في سياق العمل الإنساني.',
       date: 'أسبوعياً',
       target: 'جميع الطلاب',
-      link: 'https://example.com'
+      link: 'https://shorturl.at/ZvKRx'
     },
     {
       icon: '🩺',
@@ -42,7 +42,7 @@ const activitiesData = {
       desc: 'تنظيم قوافل طبية مجانية بالتعاون مع كلية الطب.',
       date: 'كل شهرين',
       target: 'طلاب الطب',
-      link: 'https://example.com'
+      link: 'https://shorturl.at/NfD7V'
     }
   ],
 
